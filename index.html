@@ -26,11 +26,12 @@ layout: default
 <div class="portfolil">
   <ul>
     <h3>Publications:</h3>
+    {% for item in site.data.publications %}
     <li>
-      <a href="">EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi</a>
+      <a href="{{ item.url }}">{{ item.title }}</a>
     </li>
     <li>
-      <span>Zhongyi Zhai, Bo Cheng, Zhaoning Wang, Xuan Liu, Meng Niu, Junliang Chen -  WWW 2016 Posters</span>
+      <span>{{ item.authors }} - {{ item.publication }}</span>
     </li>
   </ul>
 </div>
