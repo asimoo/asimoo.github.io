@@ -16,18 +16,24 @@ layout: default
         <li>
           <span>{{ education.title }}, {{ education.school }}, {{ education.college }}</span>
         </li>
-        {% endfor %}
-        <h3>Publications:</h3>
-        {% for item in site.data.publications %}
-        <li>
-          <a href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-        <li>
-          <span>{{ item.authors }}, {{ item.publication }}</span>
-        </li>
-        {% endfor %}
+
     </ul>
 
 
 
+</div>
+
+<div class="portfolil">
+  <ul>
+    {% endfor %}
+    <h3>Publications:</h3>
+    {% for item in site.data.publications %}
+    <li>
+      <a href="{{ item.url }}">{{ item.title }}</a>
+    </li>
+    <li>
+      <span>{{ item.authors }}, {{ item.publication }}</span>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
