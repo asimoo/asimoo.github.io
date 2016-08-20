@@ -46,3 +46,17 @@ layout: default
     </li>
   </ul>
 </div>
+
+<div class="portfolio">
+  <ul>
+    <h3>Honors:</h3>
+      {% for item in site.data.honor %}
+      <li>
+          <span>{{ item.time }}</span>
+      </li>
+      <li>
+        <span>{{ item.title }}</span>
+      </li>
+{% endfor %}
+  </ul>
+</div>
