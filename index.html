@@ -8,9 +8,13 @@ layout: default
     <h1>Me:</h1>
     <img src="assets/img/photo.jpg" width="200"/>
     <ul>
-        {% for websites in site.data.websites %}
+        {% for education in site.data.education %}
+        <h3>Education</h3>
         <li>
-            <a href="{{ websites.url }}">{{ websites.url }}</a>
+            <span>{{ educations.title }}</span>
+        </li>
+        <li>
+          <span>{{ educations.time }}</span>
         </li>
         {% endfor %}
     </ul>

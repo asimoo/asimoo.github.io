@@ -1,7 +1,8 @@
-- name: Fatso
-  category: theme
-  url: https://github.com/getmicah/fatso
+- name: EasyApp
+  intro: A Cross-platform Mobile Applications Development Environment
 
-- name: Beam
-  category: theme
-  url: https://github.com/getmicah/beam
+- name: Kingfore
+  intro: A subcribe and publish monitor system
+
+- name: Smart Shoes
+  intro: Smart Shoes and Mobile Applications
