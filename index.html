@@ -20,10 +20,10 @@ layout: default
         <h3>Publications:</h3>
         {% for item in site.data.publications %}
         <li>
-          <a href="{{item.url}}">{{item.title}}</a>
+          <a href="{{ item.url }}">{{ item.title }}</a>
         </li>
         <li>
-          <span>{{item.authors}}, {{item.publication}}</span>
+          <span>{{ item.authors }}, {{ item.publication }}</span>
         </li>
         {% endfor %}
     </ul>
