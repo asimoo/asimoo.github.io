@@ -6,9 +6,9 @@ layout: default
 
 <div class="portfolio">
     <h1>Me:</h1>
-    <img src="assets/img/photo.jpg" width="200"/>
+    <img src="assets/img/photo.jpg" width="180"/>
     <ul>
-      <h3>Education</h3>
+      <h3>Education:</h3>
         {% for education in site.data.education %}
         <li>
             <span>{{ education.time }}</span>
@@ -18,16 +18,15 @@ layout: default
         </li>
         {% endfor %}
     </ul>
-</div>
-
-
-<div class="blog">
-    <h1>Blog Posts:</h1>
     <ul>
-        {% for post in site.posts %}
-        <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
+      <h3>Publications:</h3>
+      {% for item in site.data.publications %}
+      <li>
+        <a href="{{item.url}}">{{item.title}}</a>
+      </li>
+      <li>
+        <span>{{item.authors}}, {{item.publication}}</span>
+      </li>
+      {% endfor %}
     </ul>
 </div>
