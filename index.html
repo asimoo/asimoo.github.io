@@ -16,7 +16,7 @@ layout: default
         <li>
           <span>{{ education.title }}, {{ education.school }}, {{ education.college }}</span>
         </li>
-
+{% endfor %}
     </ul>
 
 
@@ -25,7 +25,6 @@ layout: default
 
 <div class="portfolil">
   <ul>
-    {% endfor %}
     <h3>Publications:</h3>
     {% for item in site.data.publications %}
     <li>
