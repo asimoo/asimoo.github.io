@@ -11,10 +11,10 @@ layout: default
       <h3>Education</h3>
         {% for education in site.data.education %}
         <li>
-            <span>{{ education.title }}</span>
+            <span>{{ education.time }}</span>
         </li>
         <li>
-          <span>{{ education.time }}</span>
+          <span>{{ education.title }}, {{ education.school }}, {{ education.college }}</span>
         </li>
         {% endfor %}
     </ul>
